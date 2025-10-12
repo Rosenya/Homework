@@ -1,0 +1,14 @@
+#include <stdio.h> 
+#include <conio.h>
+
+int x;
+
+int main(void) { 
+    clrsrc();
+    printf("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n"); 
+    printf("Podaj liczbę i wypisz:\n");
+    scanf("%d", x);
+    printf("Twoja liczba to: %d");
+    getch();
+    return x; 
+} 
