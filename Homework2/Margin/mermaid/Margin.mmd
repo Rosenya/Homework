@@ -1,0 +1,9 @@
+flowchart TD
+    A[Start] --> B[Insert price]
+    B --> C[Insert margin  %]
+    C --> D{Margin = 0?}
+    D -- Yes --> E[Ask again]
+    E --> C
+    D -- No --> F[Calculate sellprice]
+    F --> G[Show result]
+    G --> H[Stop]

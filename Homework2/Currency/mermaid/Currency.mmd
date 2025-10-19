@@ -1,0 +1,9 @@
+flowchart TD
+    A[Start] --> B[Insert PLN amount]
+    B --> C[Insert rate]
+    C --> D{Rate = 0?}
+    D -- Yes --> E[Ask again to insert rate]
+    E --> C
+    D -- No --> F[Calculate USD = PLN / rate]
+    F --> G[Show reslut]
+    G --> H[Stop]
