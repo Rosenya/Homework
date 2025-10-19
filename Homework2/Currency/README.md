@@ -24,6 +24,9 @@ czy planowany wydatek „spina się” z budżetem na wyjazd.
 
 ## Instrukcja uruchomienia
 1. Skompiluj program:
+   Bash:
+   gcc -Wall src/Currency.c -o Currency.exe
+   Powershell:
    gcc Currency.c -o Currency.exe
 2. Uruchom:
    ./Currency.exe

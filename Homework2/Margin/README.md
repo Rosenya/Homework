@@ -21,7 +21,10 @@ do strategii i oczekiwanej rentowności.
 5. Wyświetlenie wyniku
 
 ## Instrukcja uruchomienia
-1. Skompiluj program w terminalu / PowerShell:
+1. Skompiluj program w terminalu
+   Bash:
+   gcc -Wall src/Margin.c -o Margin.exe
+   PowerShell:
    gcc Margin.c -o Margin.exe
 2. Uruchom program:
    ./Margin.exe
