@@ -1,0 +1,9 @@
+flowchart TD
+    A[Start] --> B[Read wind speed in m/s]
+    B --> C[Convert to knots]
+    C --> D{kn < 0?}
+    D -- Yes --> E[Display error message and read again]
+    E --> B
+    D -- No --> F[Check Beaufort scale range]
+    F --> G[Display Beaufort category]
+    G --> H[End]

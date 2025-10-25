@@ -1,0 +1,7 @@
+flowchart TD
+    A[Start] --> B[Read height and weight]
+    B --> C{Height or weight < 0?}
+    C -- Yes --> B
+    C -- No --> D[Calculate BMI]
+    D --> E[Display BMI and category]
+    E --> F[End]
