@@ -1,0 +1,10 @@
+flowchart TD
+    A[Start] --> B[Read days_in_month and first_day]
+    B --> C[Validate inputs]
+    C --> D[Convert first_day to column_start (Mon=1, Sun=7)]
+    D --> E[Print initial spaces for first row]
+    E --> F[day = 1]
+    F --> G{day <= days_in_month?}
+    G -- Yes --> H[Print day and increment column]
+    H --> I{column > 7?}
+    I -- Yes --> J[Print newline, reset column to 1]

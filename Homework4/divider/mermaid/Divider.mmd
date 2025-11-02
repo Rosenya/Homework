@@ -1,0 +1,11 @@
+flowchart TD
+
+A([Start]) --> B[Read k]
+B --> C{Is k > 0?}
+C -->|No| B
+C -->|Yes| D[For i = 50 to 100]
+D --> E{Is i % k == 0?}
+E -->|Yes| F[Print i]
+E -->|No| G[Next i]
+F --> G
+G --> H([End])
