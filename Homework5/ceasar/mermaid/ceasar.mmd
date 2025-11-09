@@ -1,0 +1,9 @@
+flowchart TD
+    A[Start] --> B[Read key k]
+    B --> C[Normalize k (k % 26, k >= 0)]
+    C --> D[Read character]
+    D --> E{Character != ENTER && != EOF?}
+    E -- Yes --> F[Encrypt if letter, else keep]
+    F --> G[Print encrypted character]
+    G --> D
+    E -- No --> H[Print newline & End]

@@ -14,7 +14,13 @@ Cel: Napisz program, który drukuje prosty kalendarz miesiąca w układzie tygod
    - jeśli `days_in_month ≤ 0` lub `> 31` → program prosi o ponowne wprowadzenie liczby.
    - jeśli `first_day < 1` lub `> 7` → program prosi o ponowne wprowadzenie liczby.
 4. Przekształcenie `first_day` na `column_start`, tak aby: 
-   poniedziałek = 1, niedziela
+   poniedziałek = 1, niedziela = 7
+5. Wydrukowanie początkowych spacji w pierwszym wierszu, aby każdy dzień miesiąca był w odpowiedniej kolumnie.
+6. Iteracja po dniach miesiąca:
+   - wydrukuj numer dnia,
+   - zwiększ licznik kolumn,
+   - jeśli kolumna > 7 (koniec tygodnia) → wydrukuj nową linię i zresetuj licznik kolumn do 1.
+7. Kontynuuj, aż wszystkie dni miesiąca zostaną wydrukowane.
 
 ## Instrukcja uruchomienia
 1. Skompiluj program w terminalu:  

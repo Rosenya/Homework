@@ -1,0 +1,13 @@
+flowchart TD
+    A[Start programu] --> B[Wczytaj znak od użytkownika]
+    B --> C{Czy znak to ENTER lub EOF?}
+    C -- Tak --> F[Wyświetl wyniki i zakończ]
+    C -- Nie --> D{Rodzaj znaku}
+    D -->|Cyfra| E1[Zwiększ number_counter]
+    D -->|Duża litera| E2[Zwiększ uppercase_counter]
+    D -->|Mała litera| E3[Zwiększ lowercase_counter]
+    D -->|Inny znak| E4[Zwiększ other_counter]
+    E1 --> B
+    E2 --> B
+    E3 --> B
+    E4 --> B
